@@ -25,6 +25,15 @@ export const Login = ()=>{
     if(name==="vicky" && password==="vicky@123"){
         alert("Logined as Principal!")
         navigate('/principal');
+    }else if(name==="mugil" && password==="mugil@123"){
+        alert("Logined as Teacher!")
+        navigate('/staff');
+    }else if(name==="student" && password==="student@123"){
+        alert("Logined as Student!")
+        navigate('/student');
+    }else if(name==="parent" && password==="parent@123"){
+        alert("Logined as Parent!")
+        navigate('/parent');
     }
     else{
         alert("invalid Name or Password!")
@@ -39,9 +48,12 @@ export const Login = ()=>{
             <div id="pri-navbar">
               <Link to="/"><img className="logo" src={logo} alt="" /></Link>
             </div>
+            
             <form id="login-div" onSubmit={handleLogin}>
                 <h1>Login</h1>
+                <br />
                 <label>email</label>
+                <br />
                 <input
                 type='text'
                 name='name'
@@ -52,6 +64,7 @@ export const Login = ()=>{
                 />
                 <br />
                 <label>password</label>
+                <br />
                 <input
                 type='password'
                 className="pwd"

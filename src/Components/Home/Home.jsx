@@ -16,7 +16,7 @@ export const Home = () =>{
                 <Link className="text" to="/login">Parent</Link>
             </div>
             <div id="content">
-                <img src={gif} alt="" />
+                <img className="content-img" src={gif} alt="" />
                 <h1 id="home">Home Page</h1>
             </div>
         </div>
