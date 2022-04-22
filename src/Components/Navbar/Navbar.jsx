@@ -4,11 +4,12 @@ import "./Navbar.css"
 export const Navbar = () =>{
     return(
         <div id="nav">
-            {/* <Link to="/">Home</Link>
-            <Link to="/principal">Principal</Link>
-            <Link to="/staff">Staff</Link>
-            <Link to="/student">Student</Link>
-            <Link to="/parent">Parent</Link> */}
+            <Link to="/">Home</Link>
+            <Link to="/login">Principal</Link>
+            <Link to="/login">Staff</Link>
+            <Link to="/login">Student</Link>
+            <Link to="/login">Parent</Link>
+            <Link to="/login">Parent</Link>
         </div>
     );
 }

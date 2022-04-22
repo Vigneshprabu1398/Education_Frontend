@@ -6,12 +6,14 @@ import gif from "../Images/homepage.jpg"
 export const Home = () =>{
     return(
         <div>
+
             <div id="navbar">
                 <img className="logo" src={logo} alt="" />
-                <Link id="maintext" className="text" to="/principal">Principal</Link>
-                <Link className="text" to="/staff">Staff</Link>
-                <Link className="text" to="/student">Student</Link>
-                <Link className="text" to="/parent">Parent</Link>
+                <Link id="maintext" className="text" to="/login">Principal</Link>
+                <Link className="text" to="/login">Staff</Link>
+                <Link className="text" to="/login">Student</Link>
+                <Link className="text" to="/login">Parent</Link>
+                <Link className="text" to="/login">Parent</Link>
             </div>
             <div id="content">
                 <img src={gif} alt="" />

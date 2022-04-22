@@ -1,6 +1,10 @@
+
+
 export const Principal = () =>{
+    
     return(
-        <div>
+
+        <div className="">
             <h1>Principal Page</h1>
         </div>
     );
