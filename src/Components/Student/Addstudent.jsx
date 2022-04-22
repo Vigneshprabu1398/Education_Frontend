@@ -8,7 +8,7 @@ export const Addstudent = ()=>{
         <div id="addstudent">
 
             <div id="pri-navbar">
-              <Link to="/login"><img className="logo" src={logo} alt="" /></Link>
+              <Link to="/principal"><img className="logo" src={logo} alt="" /></Link>
             </div>
 
             <div id="addstudent-content">

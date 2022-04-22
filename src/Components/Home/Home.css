@@ -14,8 +14,11 @@
     text-decoration: none;
     justify-content: space-between;
     color: #285157;
+    font-size: x-large;
+    font-weight: bolder;
     padding-left: 30px;
     padding-top: 13px;
+    font-family: 'Square Peg', cursive;
 }
 #maintext{
     padding-left: 900px;
@@ -23,14 +26,100 @@
 #content{
     width:100%;
     height: 568px;
-    
 }
 .content-img{
     width: 100%;
-    height: 100%;
+    height: 600px;
 }
 #home{
-    margin-top: -500px;
-    margin-left: 250px;
+    margin-top: -600px;
+    margin-left: 120px;
+    color: #e7d0b5;
+    font-family: 'Square Peg', cursive;
+}
+#home-div{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 30px;
+    margin-left: 120px;
+}
+#home-div>div:nth-child(1){
+    background-color: transparent;
+    border: 1px solid #e7d0b5;
     color: white;
+    height: 200px;
+    font-family: 'Square Peg', cursive;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+#home-div>div:nth-child(2){
+    background-color: #e7d0b5;
+    border: 1px solid #a0d5cb;
+    height: 200px;
+    color: #285157;
+    font-family: 'Square Peg', cursive;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+#home-div>div:nth-child(3){
+    background-color: transparent;
+    border: 1px solid #e7d0b5;
+    height: 200px;
+    color: white;
+    font-family: 'Square Peg', cursive;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+#home-div>div:nth-child(4){
+    background-color: #e7d0b5;
+    border: 1px solid #a0d5cb;
+    height: 200px;
+    color: #285157;
+    font-family: 'Square Peg', cursive;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+#home-div>div:nth-child(5){
+    background-color: transparent;
+    border: 1px solid #e7d0b5;
+    height: 200px;
+    color: white;
+    font-family: 'Square Peg', cursive;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+#home-div>div:nth-child(6){
+    background-color: #e7d0b5;
+    border: 1px solid #a0d5cb;
+    height: 200px;
+    color: #285157;
+    font-family: 'Square Peg', cursive;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    border-radius: 20px;
 }

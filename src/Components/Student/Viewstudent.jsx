@@ -8,7 +8,7 @@ export const Viewstudent = ()=>{
         <div id="viewstudent">
             
             <div id="view-navbar">
-              <Link to="/login"><img className="logo" src={logo} alt="" /></Link>
+              <Link to="/principal"><img className="logo" src={logo} alt="" /></Link>
             </div>
 
             <h2 className="viewstudent-head">Student Details</h2>
