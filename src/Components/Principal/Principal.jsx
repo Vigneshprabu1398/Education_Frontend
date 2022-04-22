@@ -16,8 +16,8 @@ export const Principal = () =>{
                 <Link to="/login"><img className="logo" src={logo} alt="" /></Link>
                 <Link to="/addStudent"><button id="addview-first" className="addview">Add Student</button></Link>
                 <Link to="/addStaff"><button className="addview">Add Staff</button></Link>
-                <Link to="/viewStaff"><button className="addview">View Student Details</button></Link>
-                <Link to="/viewStudent"><button className="addview">View Staff Details</button></Link>
+                <Link to="/viewStudent"><button className="addview">View Student Details</button></Link>
+                <Link to="/viewStaff"><button className="addview">View Staff Details</button></Link>
                 <Link to="/login"><button className="addview">Logout</button></Link>
             </div>
 

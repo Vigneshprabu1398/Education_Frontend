@@ -1,0 +1,30 @@
+.viewstudent-head{
+    text-align: center;
+    padding-top: 50px;
+    color: #285157;
+}
+.viewstudent-table thead tr td{
+    border: 1px solid #285157;
+    color: white;
+    background-color: #56ab87;
+    text-align: center;
+}
+.viewstudent-table{
+    margin-left: 50px;
+}
+.viewstudent-table-td1{
+    background-color: #285157;
+    color: white;
+    text-align: center;
+}
+.viewstudent-table-td2{
+    background-color: white;
+    color: #285157;
+    text-align: center;
+}
+#view-navbar{
+    width: 150%;
+    height: 60px;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}

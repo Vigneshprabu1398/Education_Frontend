@@ -17,7 +17,7 @@ export const Home = () =>{
             </div>
             <div id="content">
                 <img className="content-img" src={gif} alt="" />
-                <h1 id="home">Home Page</h1>
+                <h1 id="home">Virtual Schooling</h1>
             </div>
         </div>
     );
