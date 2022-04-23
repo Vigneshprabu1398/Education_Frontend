@@ -8,23 +8,23 @@ export const Addstudent = ()=>{
 
 
     const [formData, setFormData] = useState({
-        id:"",
-        name:"",
-        email:"",
-        age:"",
-        dob:"",
-        mobile:"",
-        class:"",
-        section:"",
-        address:"",
-        fname:"",
-        femail:"",
-        fmobile:"",
-        foccupation:"",
-        mname:"",
-        memail:"",
-        mmobile:"",
-        moccupation:""
+        student_id:"",
+        student_name:"",
+        student_email:"",
+        student_age:"",
+        student_DOB:"",
+        student_mobileNo:"",
+        student_class:"",
+        student_section:"",
+        student_address:"",
+        student_FathersName:"",
+        student_FathersOccupation:"",
+        student_FathersEmail:"",
+        student_FathersMobileNo:"",
+        student_MothersName:"",
+        student_MothersOccupation:"",
+        student_MothersEmail:"",
+        student_MothersMobileNo:""
     });
 
     const handleChange = (e)=>{
@@ -42,23 +42,23 @@ export const Addstudent = ()=>{
         axios.post("https://education-backend.herokuapp.com/student", formData)
         .then(()=>{
             setFormData({
-                id: "",
-                name: "",
-                email: "",
-                age: "",
-                dob: "",
-                mobile: "",
-                class: "",
-                section: "",
-                address: "",
-                fname: "",
-                femail: "",
-                fmobile: "",
-                foccupation: "",
-                mname: "",
-                memail: "",
-                mmobile: "",
-                moccupation: ""
+                student_id: "",
+                student_name: "",
+                student_email: "",
+                student_age: "",
+                student_DOB: "",
+                student_mobileNo: "",
+                student_class: "",
+                student_section: "",
+                student_address: "",
+                student_FathersName: "",
+                student_FathersOccupation: "",
+                student_FathersEmail: "",
+                student_FathersMobileNo: "",
+                student_MothersName: "",
+                student_MothersOccupation: "",
+                student_MothersEmail: "",
+                student_MothersMobileNo: ""
             })
         })
     }
@@ -78,8 +78,8 @@ export const Addstudent = ()=>{
                     <br />
                     <label className="addstudent-content-label">Student ID</label>
                     <br />
-                    <input id="id"
-                        value={formData.id}
+                    <input id="student_id"
+                        value={formData.student_id}
                         onChange={handleChange}
                         placeholder="enter student roll number"
                         className="addstudent-content-input" 
@@ -88,8 +88,8 @@ export const Addstudent = ()=>{
                     <br />
                     <label className="addstudent-content-label">Student Name</label>
                     <br />
-                    <input id="name"
-                        value={formData.name}
+                    <input id="student_name"
+                        value={formData.student_name}
                         onChange={handleChange}
                         className="addstudent-content-input" 
                         type="text" />
@@ -97,8 +97,8 @@ export const Addstudent = ()=>{
                     <br />
                     <label className="addstudent-content-label">Student Email</label>
                     <br />
-                    <input id="email"
-                        value={formData.email}
+                    <input id="student_email"
+                        value={formData.student_email}
                         onChange={handleChange}
                         className="addstudent-content-input" 
                         type="text" />
@@ -106,112 +106,112 @@ export const Addstudent = ()=>{
                     <br />
                     <label className="addstudent-content-label">Age</label>
                     <br />
-                    <input id="age"
-                        value={formData.age}
+                    <input id="student_age"
+                        value={formData.student_age}
                         onChange={handleChange}
                         className="addstudent-content-input" type="number" />
                     <br />
                     <br />
                     <label className="addstudent-content-label">Date of Birth</label>
                     <br />
-                    <input id="dob"
-                        value={formData.dob}
+                    <input id="student_DOB"
+                        value={formData.student_DOB}
                         onChange={handleChange}
                         className="addstudent-content-input" type="date" />
                     <br />
                     <br />
                     <label className="addstudent-content-label">Student Mobile No</label>
                     <br />
-                    <input id="mobile"
-                        value={formData.mobile}
+                    <input id="student_mobileNo"
+                        value={formData.student_mobileNo}
                         onChange={handleChange}
                         className="addstudent-content-input" type="number" />
                     <br />
                     <br />
                     <label className="addstudent-content-label">Student Class</label>
                     <br />
-                    <input id="class"
-                        value={formData.class}
+                    <input id="student_class"
+                        value={formData.student_class}
                         onChange={handleChange}
                         className="addstudent-content-input" type="text" />
                     <br />
                     <br />
                     <label className="addstudent-content-label">Student Section</label>
                     <br />
-                    <input id="section"
-                        value={formData.section}
+                    <input id="student_section"
+                        value={formData.student_section}
                         onChange={handleChange}
                         className="addstudent-content-input" type="text" />
                     <br />
                     <br />
                     <label className="addstudent-content-label">Student Address</label>
                     <br />
-                    <textarea id="address"
-                        value={formData.address}
+                    <textarea id="student_address"
+                        value={formData.student_address}
                         onChange={handleChange}
                         className="addstudent-content-input" />
                     <br />
                     <br />
                     <label className="addstudent-content-label">Father's Name</label>
                     <br />
-                    <input id="fname"
-                        value={formData.fname}
+                    <input id="student_FathersName"
+                        value={formData.student_FathersName}
                         onChange={handleChange}
                         className="addstudent-content-input" type="text" />
                     <br />
                     <br />
                     <label className="addstudent-content-label">Father's Email</label>
                     <br />
-                    <input id="femail"
-                        value={formData.femail}
+                    <input id="student_FathersEmail"
+                        value={formData.student_FathersEmail}
                         onChange={handleChange}
                         className="addstudent-content-input" type="text" />
                     <br />
                     <br />
                     <label className="addstudent-content-label">Father's Mobile No</label>
                     <br />
-                    <input id="fmobile"
-                        value={formData.fmobile}
+                    <input id="student_FathersMobileNo"
+                        value={formData.student_FathersMobileNo}
                         onChange={handleChange}
                         className="addstudent-content-input" type="number" />
                     <br />
                     <br />
                     <label className="addstudent-content-label">Student occupation</label>
                     <br />
-                    <input id="foccupation"
-                        value={formData.foccupation}
+                    <input id="student_FathersOccupation"
+                        value={formData.student_FathersOccupation}
                         onChange={handleChange}
                         className="addstudent-content-input" type="text" />
                     <br />
                     <br />
                     <label className="addstudent-content-label">Mother's Name</label>
                     <br />
-                    <input id="mname"
-                        value={formData.mname}
+                    <input id="student_MothersName"
+                        value={formData.student_MothersName}
                         onChange={handleChange}
                         className="addstudent-content-input" type="text" />
                     <br />
                     <br />
                     <label className="addstudent-content-label">Mother's Email</label>
                     <br />
-                    <input id="memail"
-                        value={formData.memail}
+                    <input id="student_MothersEmail"
+                        value={formData.student_MothersEmail}
                         onChange={handleChange}
                         className="addstudent-content-input" type="text" />
                     <br />
                     <br />
                     <label className="addstudent-content-label">Mother's Mobile No</label>
                     <br />
-                    <input id="mmobile"
-                        value={formData.mmobile}
+                    <input id="student_MothersMobileNo"
+                        value={formData.student_MothersMobileNo}
                         onChange={handleChange}
                         className="addstudent-content-input" type="text" />
                     <br />
                     <br />
                     <label className="addstudent-content-label">Mother's Occupation</label>
                     <br />
-                    <input id="moccupation"
-                        value={formData.moccupation}
+                    <input id="student_MothersOccupation"
+                        value={formData.student_MothersOccupation}
                         onChange={handleChange}
                         className="addstudent-content-input" type="text" />
                     <br />
