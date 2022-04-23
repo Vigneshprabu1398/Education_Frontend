@@ -9,6 +9,8 @@ import { Addstudent } from "../Student/Addstudent";
 import { Viewstudent } from "../Student/Viewstudent";
 import { Standard } from "../Standard/Standard";
 import { Class } from "../Standard/Class";
+import { Addmarks } from "../Marks/Addmarks";
+import { Viewmarks } from "../Marks/Viewmarks";
 
 export const AllRouter=()=>{
     return(
@@ -22,7 +24,9 @@ export const AllRouter=()=>{
                 <Route  path="/login" element={<Login />}/>
                 <Route  path="/standard" element={<Standard />}/>
                 <Route  path="/addStudent" element={<Addstudent />}/>
+                <Route  path="/addMarks" element={<Addmarks />}/>
                 <Route  path="/viewStudent" element={<Viewstudent />}/>
+                <Route  path="/viewMarks" element={<Viewmarks />}/>
                 <Route  path="/class" element={<Class/>}/>
             </Routes>
         </div>
