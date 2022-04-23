@@ -65,66 +65,66 @@ export const Addmarks = ()=>{
 
             <div id="addmarks-content">
 
-                <h1 className="addstudent-content-head">Add Student Marks</h1>
+                <h1 className="addmarks-content-head">Add Student Marks</h1>
 
 
                 <div>
-                    <label className="addstudent-content-label">Student ID</label>
+                    <label className="addmarks-content-label">Student ID</label>
                     <br />
                     <input id="mark_id"
                         value={formData.mark_id}
                         onChange={handleChange}
                         placeholder="enter student roll number"
-                        className="addstudent-content-input"
+                        className="addmarks-content-input"
                         type="number" />
                 </div>
                 <div>
-                    <label className="addstudent-content-label">Tamil</label>
+                    <label className="addmarks-content-label">Tamil</label>
                     <br />
                     <input id="tamil"
                         value={formData.tamil}
                         onChange={handleChange}
-                        className="addstudent-content-input"
+                        className="addmarks-content-input"
                         type="number" />
                 </div>
                 <div>
-                    <label className="addstudent-content-label">English</label>
+                    <label className="addmarks-content-label">English</label>
                     <br />
                     <input id="english"
                         value={formData.english}
                         onChange={handleChange}
-                        className="addstudent-content-input"
+                        className="addmarks-content-input"
                         type="number" />
                 </div>
                 <div>
-                    <label className="addstudent-content-label">Maths</label>
+                    <label className="addmarks-content-label">Maths</label>
                     <br />
                     <input id="maths"
                         value={formData.maths}
                         onChange={handleChange}
-                        className="addstudent-content-input" type="number" />
+                        className="addmarks-content-input" type="number" />
                 </div>
                 <div>
-                    <label className="addstudent-content-label">Science</label>
+                    <label className="addmarks-content-label">Science</label>
                     <br />
                     <input id="science"
                         value={formData.science}
                         onChange={handleChange}
-                        className="addstudent-content-input" type="number" />
+                        className="addmarks-content-input" type="number" />
                 </div>
                 <div>
-                    <label className="addstudent-content-label">Social Science</label>
+                    <label className="addmarks-content-label">Social Science</label>
                     <br />
                     <input id="social_science"
                         value={formData.social_science}
                         onChange={handleChange}
-                        className="addstudent-content-input" type="number" />
+                        className="addmarks-content-input" type="number" />
                 </div>
                 <br />
                 <input type="submit"
                     value="submit"
                     onClick={handleSubmit}
-                    id="addstudent-content-submit" />
+                    id="addmarks-content-submit" />
 
             </div>
 

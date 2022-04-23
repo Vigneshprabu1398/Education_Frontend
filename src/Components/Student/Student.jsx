@@ -12,7 +12,7 @@ export const Student = () =>{
 
             <div id="student-content">
                 <div className="staff">
-                    <Link className="stu-link1" to="/"><h1>View Deatils</h1></Link>
+                    <Link className="stu-link1" to="/studentdetails"><h1>View Deatils</h1></Link>
                 </div>
                 <div className="student">
                    <Link className="stu-link2" to="/timetable"><h1>View Timetale</h1></Link>

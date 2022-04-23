@@ -42,13 +42,13 @@ export const Login = ()=>{
 
 
     return(
-        <div className="login">
+        <div className="signin">
 
             <div id="pri-navbar">
               <Link to="/"><img className="logo" src={logo} alt="" /></Link>
             </div>
             
-            <form id="login-div" onSubmit={handleLogin}>
+            <form id="signin-div" onSubmit={handleLogin}>
                 <h1>Login</h1>
                 <br />
                 <label>email</label>

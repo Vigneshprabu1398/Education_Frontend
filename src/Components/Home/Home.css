@@ -14,7 +14,7 @@
     text-decoration: none;
     justify-content: space-between;
     color: #285157;
-    font-size: x-large;
+    font-size: medium;
     font-weight: bolder;
     padding-left: 30px;
     padding-top: 15px;
@@ -33,10 +33,11 @@
 }
 #home{
     margin-top: -600px;
-    margin-left: 120px;
-    color: #e7d0b5;
+    margin-left: 50px;
+    color: white;
     font-family: Helvetica;
     overflow: hidd17;
+    text-align: center;
 }
 #home-div{
     width: 60%;

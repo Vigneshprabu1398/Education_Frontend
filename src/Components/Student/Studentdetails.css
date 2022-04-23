@@ -1,0 +1,54 @@
+#studentform{
+    border: 5px solid dodgerblue;
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
+}
+#student-nav{
+    width: 100%;
+    height: 40px;
+    margin-top: -20px;
+    background-color: dodgerblue;
+    color: white;
+    text-align: center;
+}
+#studentform-info{
+    display: flex;
+    width: 100%;
+    height: 300px;
+}
+#left{
+    width: 70%;
+    
+}
+#left1{
+    height: 30%;
+    border: 5px solid dodgerblue;
+}
+#left2{
+    height: 30%;
+    border: 5px solid dodgerblue;
+}
+#left3{
+    height: 30%;
+    border: 5px solid dodgerblue;
+}
+.left-name{
+    color: dodgerblue;
+    padding-left: 20px;
+}
+.left-para{
+    color: #285157;
+    margin-top: -10px;
+    padding-left: 20px;
+}
+#right{
+    border: 5px solid dodgerblue;
+    width: 30%;
+}
+.right-img{
+    width: 100%;
+}
+#form1{
+    border: 5px solid dodgerblue;
+}

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../Images/logo.png";
+import principal from "../Images/principal.gif"
 import { useNavigate } from "react-router";
 import "./Principal.css"
 
@@ -20,7 +21,6 @@ export const Principal = () =>{
                 <Link to="/addStudent"><button id="addview-first" className="addview">Add Student</button></Link>
                 <Link to="/addStaff"><button className="addview">Add Staff</button></Link>
                 <Link to="/login"><button className="addview">Logout</button></Link>
-                <Link to="/viewStudent"><button className="addview">View</button></Link>
             </div>
 
             <h4 className="hello">Hello Principal,</h4>
@@ -31,6 +31,9 @@ export const Principal = () =>{
                 </div>
                 <div className="student" onClick={handleStudent}>
                     <h1>View Student Deatils</h1>
+                </div>
+                <div className="gif-princi">
+                    <img className="" src={principal} alt="" />
                 </div>
             </div>
 
