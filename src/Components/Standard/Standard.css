@@ -1,0 +1,29 @@
+.smain{
+    display: grid;
+    margin-top: 3%;
+    margin-left: 25%;
+    grid-template-columns: repeat(4,1fr);
+    width: 50%;
+    height: 500px;
+    text-align: center;
+}
+
+.stand{
+    background-color: rgb(255, 0, 247);
+    margin-top: 10%;
+    margin-left: 20%;
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    justify-content: center;
+}
+.stand:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+p{
+    font-family: sans-serif;
+    color: aliceblue;
+    font-size: xx-large;
+}

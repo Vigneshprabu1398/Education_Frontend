@@ -7,6 +7,7 @@ import { Student } from "../Student/Student";
 import { Parent } from "../Parent/Parent"
 import { Addstudent } from "../Student/Addstudent";
 import { Viewstudent } from "../Student/Viewstudent";
+import { Standard } from "../Standard/Standard";
 
 export const AllRouter=()=>{
     return(
@@ -18,7 +19,7 @@ export const AllRouter=()=>{
                 <Route path="/student" element={<Student />}/>
                 <Route path="/parent" element={<Parent />}/>
                 <Route  path="/login" element={<Login />}/>
-                <Route  path="/addStudent" element={<Addstudent />}/>
+                <Route  path="/standard" element={<Standard />}/>
                 <Route  path="/viewStudent" element={<Viewstudent />}/>
             </Routes>
         </div>

@@ -5,6 +5,7 @@
     width: 100%;
     height: 60px;
     display: flex;
+    justify-content: center;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 #footer{
@@ -26,7 +27,7 @@
     color: #285157;
     font-size: large;
     font-weight: bolder;
-    font-family: 'Square Peg', cursive;
+    font-family: Helvetica ;
     cursor: pointer;
 }
 .addview:hover{
@@ -34,13 +35,13 @@
     color: white;
 }
 #addview-first{
-    margin-left: 600px;
+    margin-left: 800px;
 }
 .hello{
     padding-left: 50px;
     color: #285157;
     padding-top: 30px;
-    font-family: 'Square Peg', cursive;
+    font-family: Helvetica ;
     font-size: x-large;
     font-weight: bolder;
 }
@@ -53,11 +54,13 @@
     grid-gap: 30px;
     margin-bottom: 100px;
     margin-top: 100px;  
+    justify-content: center;
 }
-.principal-content1{
-    background-color: white;
+.staff{
+    background-color: rgb(0, 255, 238);
+    border-radius: 30px;
     height: 300px;
-    font-family: 'Square Peg', cursive;
+    font-family: Helvetica ;
     font-size: 30px;
     padding-top: 20px;
     padding-left: 10px;
@@ -66,10 +69,11 @@
     color: #285157;
 
 }
-.principal-content2{
-    background-color: #285157;
+.student{
+    background-color: #7b00ff;
     height: 300px;
-    font-family: 'Square Peg', cursive;
+    border-radius: 30px;
+    font-family: Helvetica ;
     font-size: 30px;
     padding-top: 20px;
     padding-left: 10px;
@@ -77,51 +81,7 @@
     padding-bottom: 20px;
     color: white;
 }
-.principal-content3{
-    background-color: white;
-    height: 300px;
-    background-color: white;
-    height: 300px;
-    font-family: 'Square Peg', cursive;
-    font-size: 30px;
-    padding-top: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 20px;
-    color: #285157;
-}
-.principal-content4{
-    background-color: #285157;;
-    height: 300px;
-    font-family: 'Square Peg', cursive;
-    font-size: 30px;
-    padding-top: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 20px;
-    color: white;
-}
-.principal-content5{
-    background-color: white;
-    height: 300px;
-    background-color: white;
-    height: 300px;
-    font-family: 'Square Peg', cursive;
-    font-size: 30px;
-    padding-top: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 20px;
-    color: #285157;
-}
-.principal-content6{
-    background-color: #285157;
-    height: 300px;
-    font-family: 'Square Peg', cursive;
-    font-size: 30px;
-    padding-top: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 20px;
-    color: white;
+#principal-content>div:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
