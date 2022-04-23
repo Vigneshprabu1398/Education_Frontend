@@ -8,7 +8,7 @@ import { Parent } from "../Parent/Parent"
 import { Addstudent } from "../Student/Addstudent";
 import { Viewstudent } from "../Student/Viewstudent";
 import { Standard } from "../Standard/Standard";
-import { Class } from "../Class/Class";
+import { Class } from "../Standard/Class";
 
 export const AllRouter=()=>{
     return(

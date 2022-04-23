@@ -8,11 +8,12 @@ export const Class = () =>{
     console.log("class",state);
     return(
         <div>
-            <img className="logo" src={logo} alt="" />
-            <Link id="maintext" className="text" to="/login">Principal</Link>
-            <Link className="text" to="/login">Staff</Link>
-            <Link className="text" to="/login">Student</Link>
-            <Link className="text" to="/login">Parent</Link>
+            <div id="principal-navbar">
+                <Link to="/login"><img className="logo" src={logo} alt="" /></Link>
+                <Link to="/addStudent"><button id="addview-first" className="addview">Add Student</button></Link>
+                <Link to="/addStaff"><button className="addview">Add Staff</button></Link>
+                <Link to="/login"><button className="addview">Logout</button></Link>
+            </div>
             <h1>{state}</h1>          
         </div>
     );
