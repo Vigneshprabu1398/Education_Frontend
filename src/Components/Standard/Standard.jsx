@@ -1,12 +1,18 @@
 import "./Standard.css"
 import { Link } from "react-router-dom";
 import logo from "../Images/logo.png";
+import { useContext, useState } from "react";
+import { AppContext } from "../Context/Context";
+import { useNavigate } from "react-router";
 
 export const Standard = () =>{
     const stand=["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII" ]
-    const handleClick=((e)=>{
-        console.log(e.target);
-    })
+    const {state,handleChange} = useContext(AppContext)
+    const navigate = useNavigate();
+    const handleClick = () =>{
+        navigate('/class');
+    }
+
     return(
         <div>
              <div id="principal-navbar">
@@ -18,8 +24,12 @@ export const Standard = () =>{
             <div className="smain">
                 {stand.map((sec) => (
                     <div className="stand"
-                    value={sec}
-                    onClick={handleClick}>
+                    key={sec}
+                    onClick={()=>{
+                        handleChange(sec);
+                        handleClick();
+                        
+                    }}>
                         <p>{sec}</p>
                     </div>
                 ))}
