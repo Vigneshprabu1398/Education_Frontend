@@ -21,6 +21,7 @@ export const AllRouter=()=>{
                 <Route path="/parent" element={<Parent />}/>
                 <Route  path="/login" element={<Login />}/>
                 <Route  path="/standard" element={<Standard />}/>
+                <Route  path="/addStudent" element={<Addstudent />}/>
                 <Route  path="/viewStudent" element={<Viewstudent />}/>
                 <Route  path="/class" element={<Class/>}/>
             </Routes>
