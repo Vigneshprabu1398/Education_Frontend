@@ -1,8 +1,19 @@
+import axios from "axios";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom"
 import logo from "../Images/logo.png"
 import "./Viewstudent.css";
 
 export const Viewstudent = ()=>{
+
+    const [list, setList] = useState([])
+
+    useEffect(()=>{
+        axios.get("https://education-backend.herokuapp.com/student")
+        .then((res)=>{
+            setList(res.data)
+        })
+    }, [])
 
     return(
         <div id="viewstudent">
@@ -35,27 +46,31 @@ export const Viewstudent = ()=>{
                         <td>Mother's Occupation</td>
                     </tr>
                 </thead>
-                <tbody>
+                {
+                    list.map(e=>
+                        <tbody>
                     <tr>
-                        <td className="viewstudent-table-td1">06001</td>
-                        <td className="viewstudent-table-td2">Mugil</td>
-                        <td className="viewstudent-table-td1">mugil@gmail.com</td>
-                        <td className="viewstudent-table-td2">26</td>
-                        <td className="viewstudent-table-td1">28/03/1996</td>
-                        <td className="viewstudent-table-td2">6374488232</td>
-                        <td className="viewstudent-table-td1">Sixth</td>
-                        <td className="viewstudent-table-td2">A</td>
-                        <td className="viewstudent-table-td1">Dharmapuri, Tamilnadu</td>
-                        <td className="viewstudent-table-td2">Senthilkumar</td>
-                        <td className="viewstudent-table-td1">senthil@gmail.com</td>
-                        <td className="viewstudent-table-td2">1234567890</td>
-                        <td className="viewstudent-table-td1">Farmer</td>
-                        <td className="viewstudent-table-td2">Malathi</td>
-                        <td className="viewstudent-table-td1">malathi@gmail.com</td>
-                        <td className="viewstudent-table-td2">0987654321</td>
-                        <td className="viewstudent-table-td1">Home Maker</td>
+                        <td className="viewstudent-table-td1">{e.student_id}</td>
+                        <td className="viewstudent-table-td2">{e.student_name}</td>
+                        <td className="viewstudent-table-td1">{e.student_email}</td>
+                        <td className="viewstudent-table-td2">{e.student_age}</td>
+                        <td className="viewstudent-table-td1">{e.student_DOB}</td>
+                        <td className="viewstudent-table-td2">{e.student_mobileNo}</td>
+                        <td className="viewstudent-table-td1">{e.student_class}</td>
+                        <td className="viewstudent-table-td2">{e.student_section}</td>
+                        <td className="viewstudent-table-td1">{e.student_address}</td>
+                        <td className="viewstudent-table-td2">{e.student_FathersName}</td>
+                        <td className="viewstudent-table-td1">{e.student_FathersEmail}</td>
+                        <td className="viewstudent-table-td2">{e.student_FathersMobileNo}</td>
+                        <td className="viewstudent-table-td1">{e.student_FathersOccupation}</td>
+                        <td className="viewstudent-table-td2">{e.student_MothersName}</td>
+                        <td className="viewstudent-table-td1">{e.student_MothersEmail}</td>
+                        <td className="viewstudent-table-td2">{e.student_MothersMobileNo}</td>
+                        <td className="viewstudent-table-td1">{e.student_MothersOccupation}</td>
                     </tr>
                 </tbody>
+                        )
+                }
             </table>
 
         </div>

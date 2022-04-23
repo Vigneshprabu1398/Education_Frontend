@@ -20,6 +20,7 @@ export const Principal = () =>{
                 <Link to="/addStudent"><button id="addview-first" className="addview">Add Student</button></Link>
                 <Link to="/addStaff"><button className="addview">Add Staff</button></Link>
                 <Link to="/login"><button className="addview">Logout</button></Link>
+                <Link to="/viewStudent"><button className="addview">View</button></Link>
             </div>
 
             <h4 className="hello">Hello Principal,</h4>
