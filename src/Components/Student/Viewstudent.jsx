@@ -3,10 +3,12 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom"
 import logo from "../Images/logo.png"
 import "./Viewstudent.css";
+import { useContext } from "react";
+import { AppContext } from "../Context/Context";
 
 export const Viewstudent = ()=>{
-
     const [list, setList] = useState([])
+    const {state,handleChange} = useContext(AppContext)
 
     useEffect(()=>{
         axios.get("https://education-backend.herokuapp.com/student")
@@ -14,6 +16,7 @@ export const Viewstudent = ()=>{
             setList(res.data)
         })
     }, [])
+
 
     return(
         <div id="viewstudent">
@@ -47,32 +50,41 @@ export const Viewstudent = ()=>{
                     </tr>
                 </thead>
                 {
-                    list.map(e=>
-                        <tbody>
-                    <tr>
-                        <td className="viewstudent-table-td1">{e.student_id}</td>
-                        <td className="viewstudent-table-td2">{e.student_name}</td>
-                        <td className="viewstudent-table-td1">{e.student_email}</td>
-                        <td className="viewstudent-table-td2">{e.student_age}</td>
-                        <td className="viewstudent-table-td1">{e.student_DOB}</td>
-                        <td className="viewstudent-table-td2">{e.student_mobileNo}</td>
-                        <td className="viewstudent-table-td1">{e.student_class}</td>
-                        <td className="viewstudent-table-td2">{e.student_section}</td>
-                        <td className="viewstudent-table-td1">{e.student_address}</td>
-                        <td className="viewstudent-table-td2">{e.student_FathersName}</td>
-                        <td className="viewstudent-table-td1">{e.student_FathersEmail}</td>
-                        <td className="viewstudent-table-td2">{e.student_FathersMobileNo}</td>
-                        <td className="viewstudent-table-td1">{e.student_FathersOccupation}</td>
-                        <td className="viewstudent-table-td2">{e.student_MothersName}</td>
-                        <td className="viewstudent-table-td1">{e.student_MothersEmail}</td>
-                        <td className="viewstudent-table-td2">{e.student_MothersMobileNo}</td>
-                        <td className="viewstudent-table-td1">{e.student_MothersOccupation}</td>
-                    </tr>
-                </tbody>
-                        )
-                }
+                    list.filter(e =>{
+                        if(state==="Viewall"){
+                            return e;
+                        }
+                        else if(e.student_section===state){
+                            return e;
+                        }
+                        
+                    }).map((e)=>{
+                        return(
+                            <tbody
+                            key={e.student_id}>
+                            <tr>
+                                <td className="viewstudent-table-td1">{e.student_id}</td>
+                                <td className="viewstudent-table-td2">{e.student_name}</td>
+                                <td className="viewstudent-table-td1">{e.student_email}</td>
+                                <td className="viewstudent-table-td2">{e.student_age}</td>
+                                <td className="viewstudent-table-td1">{e.student_DOB}</td>
+                                <td className="viewstudent-table-td2">{e.student_mobileNo}</td>
+                                <td className="viewstudent-table-td1">{e.student_class}</td>
+                                <td className="viewstudent-table-td2">{e.student_section}</td>
+                                <td className="viewstudent-table-td1">{e.student_address}</td>
+                                <td className="viewstudent-table-td2">{e.student_FathersName}</td>
+                                <td className="viewstudent-table-td1">{e.student_FathersEmail}</td>
+                                <td className="viewstudent-table-td2">{e.student_FathersMobileNo}</td>
+                                <td className="viewstudent-table-td1">{e.student_FathersOccupation}</td>
+                                <td className="viewstudent-table-td2">{e.student_MothersName}</td>
+                                <td className="viewstudent-table-td1">{e.student_MothersEmail}</td>
+                                <td className="viewstudent-table-td2">{e.student_MothersMobileNo}</td>
+                                <td className="viewstudent-table-td1">{e.student_MothersOccupation}</td>
+                            </tr>
+                        </tbody>
+                        );
+                    })}
             </table>
-
-        </div>
-    )
+        </div>
+    )
 }

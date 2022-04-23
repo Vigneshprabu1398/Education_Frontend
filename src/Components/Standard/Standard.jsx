@@ -1,7 +1,7 @@
 import "./Standard.css"
 import { Link } from "react-router-dom";
 import logo from "../Images/logo.png";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { AppContext } from "../Context/Context";
 import { useNavigate } from "react-router";
 
@@ -12,7 +12,7 @@ export const Standard = () =>{
     const handleClick = () =>{
         navigate('/class');
     }
-
+    
     return(
         <div>
              <div id="principal-navbar">
@@ -34,6 +34,6 @@ export const Standard = () =>{
                     </div>
                 ))}
             </div>
-        </div>
-    );
+        </div>
+    );
 }

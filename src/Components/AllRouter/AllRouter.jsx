@@ -11,6 +11,7 @@ import { Standard } from "../Standard/Standard";
 import { Class } from "../Standard/Class";
 import { Addmarks } from "../Marks/Addmarks";
 import { Viewmarks } from "../Marks/Viewmarks";
+import { Viewtimetable } from "../Marks/Viewtimetable";
 
 export const AllRouter=()=>{
     return(
@@ -27,6 +28,8 @@ export const AllRouter=()=>{
                 <Route  path="/addMarks" element={<Addmarks />}/>
                 <Route  path="/viewStudent" element={<Viewstudent />}/>
                 <Route  path="/viewMarks" element={<Viewmarks />}/>
+                <Route  path="/timetable" element={<Viewtimetable />}/>
+                <Route  path="/students" element={<Viewstudent />}/>
                 <Route  path="/class" element={<Class/>}/>
             </Routes>
         </div>

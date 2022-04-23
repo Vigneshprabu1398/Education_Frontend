@@ -1,0 +1,17 @@
+#timetable-table {
+    margin-top: 50px;
+    width: 60%;
+    margin: auto;
+    color: #285157;
+    background-color: white;
+    text-align: center;
+}
+
+#timetable-table thead tr td{
+    border: 1px solid #285157;
+}
+#timetable-head{
+    text-align: center;
+    color: #285157;
+    padding-top: 100px;
+}
