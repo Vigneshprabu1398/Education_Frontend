@@ -32,6 +32,9 @@ export const Viewstudent = ()=>{
             
             <div id="view-navbar">
               <Link to="/principal"><img className="logo" src={logo} alt="" /></Link>
+              <div id="one">
+              <Link  id="class1" to="/class">Class</Link>
+              </div>
             </div>
 
             <h2 className="viewstudent-head">Student Details of X : {state}</h2>
