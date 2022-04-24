@@ -22,16 +22,16 @@ export const Login = ()=>{
 
     const handleLogin = (e) => {
     e.preventDefault();
-    if(name==="vicky" && password==="vicky@123"){
+    if(name==="principal" && password==="principal"){
         alert("Logined as Principal!")
         navigate('/principal');
-    }else if(name==="mugil" && password==="mugil@123"){
+    }else if(name==="staff" && password==="staff"){
         alert("Logined as Teacher!")
         navigate('/staff');
-    }else if(name==="student" && password==="student@123"){
+    }else if(name==="student" && password==="student"){
         alert("Logined as Student!")
         navigate('/student');
-    }else if(name==="parent" && password==="parent@123"){
+    }else if(name==="parent" && password==="parent"){
         alert("Logined as Parent!")
         navigate('/parent');
     }
