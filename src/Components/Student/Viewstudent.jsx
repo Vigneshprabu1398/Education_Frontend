@@ -5,6 +5,7 @@ import logo from "../Images/logo.png"
 import "./Viewstudent.css";
 import { useContext } from "react";
 import { AppContext } from "../Context/Context";
+import { SortAndFilterButtons } from "../Sorting/Sorting";
 
 export const Viewstudent = ()=>{
     const [list, setList] = useState([])
@@ -17,6 +18,14 @@ export const Viewstudent = ()=>{
         })
     }, [])
 
+    function handleSort(nameBy, order) {
+        if (nameBy === 'student_name' && order === 1)
+            setList((prev) =>
+                [...prev.sort((a, b) => a.student_name > b.student_name ? 1 : -1)])
+        else if (nameBy === 'student_name' && order === -1)
+            setList((prev) =>
+                [...prev.sort((a, b) => a.student_name > b.student_name ? -1 : 1)])
+    }
 
     return(
         <div id="viewstudent">
@@ -25,8 +34,10 @@ export const Viewstudent = ()=>{
               <Link to="/principal"><img className="logo" src={logo} alt="" /></Link>
             </div>
 
-            <h2 className="viewstudent-head">Student Details</h2>
-
+            <h2 className="viewstudent-head">Student Details of X : {state}</h2>
+            <SortAndFilterButtons
+                handleSort={handleSort}
+            />
             <table className="viewstudent-table">
                 <thead>
                     <tr>
@@ -59,6 +70,7 @@ export const Viewstudent = ()=>{
                         }
                         
                     }).map((e)=>{
+                        
                         return(
                             <tbody
                             key={e.student_id}>
